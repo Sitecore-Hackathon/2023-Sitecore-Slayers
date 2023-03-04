@@ -78,7 +78,7 @@ try {
     Write-Host "Generating Traefik TLS certificate..." -ForegroundColor Green
     & $mkcert -install
     & $mkcert "*.sitecoreslayers.localhost"
-    & $mkcert "sitecoreslayerscm.localhost"
+    & $mkcert "xmcloudcm.localhost"
 
     # stash CAROOT path for messaging at the end of the script
     $caRoot = "$(& $mkcert -CAROOT)\rootCA.pem"
@@ -97,7 +97,7 @@ finally {
 
 Write-Host "Adding Windows hosts file entries..." -ForegroundColor Green
 
-Add-HostsEntry "sitecoreslayerscm.localhost"
+Add-HostsEntry "xmcloudcm.localhost"
 Add-HostsEntry "www.sitecoreslayers.localhost"
 
 ###############################
@@ -131,7 +131,7 @@ if ($InitEnv) {
     Set-EnvFileVariable "HOST_LICENSE_FOLDER" -Value $LicenseXmlPath
 
     # CM_HOST
-    Set-EnvFileVariable "CM_HOST" -Value "sitecoreslayerscm.localhost"
+    Set-EnvFileVariable "CM_HOST" -Value "xmcloudcm.localhost"
 
     # RENDERING_HOST
     Set-EnvFileVariable "RENDERING_HOST" -Value "www.sitecoreslayers.localhost"
