@@ -3,6 +3,9 @@
 ## Team name
 Sitecore Slayers
 
+<img src="docs/images/SitecoreSlayers.png" alt= 'Sitecore Slayers Team' width="300" >
+
+
 ## Category
 Best Enhancement to XM Cloud
 
@@ -37,18 +40,19 @@ We created a module that takes content from an existing Sitecore item and genera
     ```.\up.ps1```
 
 5. Validate and accept the machine authorization message when its opened in a browser.
-6. Once the scripts have completed and the site is opened in a browser, publish the code from the repository with Visual Studio or run the following command in your PowerShell window:
 
-    ```dotnet publish .\XmCloudSXAStarter.sln```
+6. Once the scripts have completed and the site is opened in a browser, publish the code from the repository with Visual Studio.
 
 ### Configuration
 An API key has been provided to the adjusted to use with the module.  If for some reason it's not working please reach out to Dave Ambrose on Slack for a fresh API key for testing.
 
 ## Usage instructions
 
-To use the Metadata Generator simply open the Content Editor in Sitecore XM Cloud and navigate to a page with content to generate the information from.  In our sample this path is:  [PROVIDE PATH]
+To use the Metadata Generator simply open the Content Editor in Sitecore XM Cloud and navigate to a page with content to generate the information from.  In our sample this path is:  ```/sitecore/content/SitecoreSlayers/SitecoreSlayers/Home```
 
 Once the page is found right click on it and navigate to Scripts -> Sitecore Slayers -> Metadata Generator and click the item to launch the Metadata Generator modal.
+
+<img src="docs/images/ScriptShortcut.png" alt= 'Generator Shortcut' width="300" >
 
 With the modal open select a field for each of the dropdown values:
 
@@ -64,3 +68,6 @@ Click Execute and the tool will generate the info.  When it's done simply close 
 
 ## Comments
 We could see expanding this module to provide much more functionality than just generating metadata.
+
+
+ScriptShortcut.PNG
