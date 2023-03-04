@@ -7,9 +7,8 @@ SharedFields:
 - ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
   Hint: Script
   Value: |
-    function MakeAIRequest ($content,$prompt,$label,$targetField) 
+    function MakeAIRequest ($content,$prompt,$label,$targetField,$apiKey) 
     {
-        $apiKey = "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"
         $url = "https://api.openai.com/v1/engines/text-davinci-002/completions"
         
         $headers = @{
@@ -39,9 +38,6 @@ SharedFields:
     # Get the item for the current context (used when right clicking and selecting the script)
     $item = Get-Item .
     
-    # Get the item for testing (used in the PowerShell ISE)
-    # $item = Get-Item -Path "master:\sitecore\content\[your testing path here]"
-    
     # Get the template of the selected item
     $template = Get-ItemTemplate -Item $item
     
@@ -57,6 +53,7 @@ SharedFields:
             @{Name="KeywordsField"; Title="Keywords"; Options=$fields; Tooltip="Select the field for your keywords." }
             @{Name="DescriptionField"; Title="Description"; Options=$fields; Tooltip="Select the field for your description." }
             @{Name="TitleField"; Title="Page Title"; Options=$fields; Tooltip="Select the field for your page title." }
+            @{Name="ApiKey"; Title="ChatGPT API Key"; Tooltip="Enter an API key for ChatGPT." }
         )
         Title = "AI Metadata Generation"
         Description = "Select the fields you'd like to use for generation."
@@ -73,13 +70,13 @@ SharedFields:
     }
     
     $prompt = "Extract 10 unique multi-word key phrases from this text and give me a comma delimited list.  Maximum of 2 words per phrase."
-    MakeAIRequest $item.Fields[$SourceContent].Value $prompt "Keywords:" $KeywordsField
+    MakeAIRequest $item.Fields[$SourceContent].Value $prompt "Keywords:" $KeywordsField $ApiKey
     
     $prompt = "Provide two small sentences for a meta description to use on a website based on the following content."
-    MakeAIRequest $item.Fields[$SourceContent].Value $prompt "Description:" $DescriptionField
+    MakeAIRequest $item.Fields[$SourceContent].Value $prompt "Description:" $DescriptionField $ApiKey
     
     $prompt = "Provide a page title that can be used for a browser on a website based on the following content."
-    MakeAIRequest $item.Fields[$SourceContent].Value $prompt "Page Title:" $TitleField
+    MakeAIRequest $item.Fields[$SourceContent].Value $prompt "Page Title:" $TitleField $ApiKey
     
 Languages:
 - Language: en
@@ -99,11 +96,11 @@ Languages:
         sitecore\karega.anglin@perficient.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6d359b9a-9536-4e30-9121-d98a6ad395b0"
+      Value: "00f3a31e-60d1-42b0-857d-e811ac0778d7"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\karega.anglin@perficient.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230304T195920Z
+      Value: 20230304T210207Z
