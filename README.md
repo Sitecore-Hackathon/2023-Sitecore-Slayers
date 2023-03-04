@@ -64,10 +64,9 @@ With the modal open select a field for each of the dropdown values:
 
 **Page Title** - Set this to the proper field for Page Title (field: Title)
 
-Click Execute and the tool will generate the info.  When it's done simply close the window and you'll see the newly generated content.
+<img src="docs/images/Modal.png" alt= 'Metadata Generation Modal' width="300" >
+
+Click OK and the tool will generate the info.  When it's done simply close the window and you'll see the newly generated content.
 
 ## Comments
 We could see expanding this module to provide much more functionality than just generating metadata.
-
-
-ScriptShortcut.PNG
