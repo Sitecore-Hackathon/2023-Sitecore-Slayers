@@ -16,7 +16,7 @@ We created a module that takes content from an existing Sitecore item and genera
     - Meta Description
 
 ## Video link
-⟹ [Replace this Video link](#video-link)
+[YouTube:  Sitecore Slayers Hackathon 2023 Submission](https://www.youtube.com/watch?v=CGJiWkpY33E)
 
 ## Pre-requisites and Dependencies
 
