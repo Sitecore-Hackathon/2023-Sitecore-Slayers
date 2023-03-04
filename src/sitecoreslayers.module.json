@@ -17,7 +17,14 @@
                 "name": "media",
                 "path": "/sitecore/Media Library/Project/SitecoreSlayers",
                 "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "PSscripts",
+                "path":"/sitecore/system/Modules/PowerShell/Script Library/SPE/Tools/Authoring Instrumentation/Content Editor/Context Menu/SitecoreSlayers",
+                "allowedPushOperations":"CreateUpdateAndDelete"
             }
+
+
         ]
     }
 }

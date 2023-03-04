@@ -1,18 +1,15 @@
 ﻿---
-ID: "b3dbef95-c305-4f64-974b-1474d4dff5fb"
+ID: "3f0a74f5-c915-4c2b-8796-37ca2a19e246"
 Parent: "57664221-c122-4775-8311-ee40f7197ff8"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Project/SitecoreSlayers/Page/Content/Content
+Path: /sitecore/templates/Project/SitecoreSlayers/Page/Content/Keywords
 SharedFields:
-- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
-  Hint: Source
-  Value: "query:$xaRichTextProfile"
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
-  Value: Rich Text
+  Value: "Single-Line Text"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 2
+  Value: 3
 Languages:
 - Language: en
   Versions:
@@ -20,18 +17,18 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20230304T152458Z
+      Value: 20230304T194702Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
-        sitecore\z0PvL0RFjD
+        sitecore\karega.anglin@perficient.com
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\z0PvL0RFjD
+        sitecore\karega.anglin@perficient.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "39f1b7ba-ca4c-4425-a743-d539d64a86e0"
+      Value: "c26c97ca-44c4-416f-93ce-7c390ee269f7"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |

@@ -1,0 +1,109 @@
+﻿---
+ID: "c42d0fce-fd69-4ebd-b685-85dfef85de84"
+Parent: "dc261399-1a4f-46dc-ac7c-f4594930901d"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/SPE/Tools/Authoring Instrumentation/Content Editor/Context Menu/SitecoreSlayers/Meta Data Generation
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    function MakeAIRequest ($content,$prompt,$label,$targetField) 
+    {
+        $apiKey = "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"
+        $url = "https://api.openai.com/v1/engines/text-davinci-002/completions"
+        
+        $headers = @{
+            "Content-Type" = "application/json"
+            "Authorization" = "Bearer $apiKey"
+        }
+    
+        $body = @{
+            prompt = "$prompt  Here's the content:  `n$content`n"
+            max_tokens = 50
+            n = 1
+            temperature = 0.5
+        } | ConvertTo-Json -Depth 3
+    
+        $response = Invoke-RestMethod -Uri $url -Method Post -Headers $headers -Body $body
+        $result = $response.choices.text | ForEach-Object { $_.Trim() }
+        
+        $item.Editing.BeginEdit()
+        $item[$targetField] = $result
+        $saveResult = $item.Editing.EndEdit()
+        
+        if ($saveResult -eq $true) {
+            Write-Output "$label $result"
+        }
+    }
+        
+    # Get the item for the current context (used when right clicking and selecting the script)
+    $item = Get-Item .
+    
+    # Get the item for testing (used in the PowerShell ISE)
+    # $item = Get-Item -Path "master:\sitecore\content\[your testing path here]"
+    
+    # Get the template of the selected item
+    $template = Get-ItemTemplate -Item $item
+    
+    $fields = @{}
+    
+    $template.Fields | Where-Object { $_.Name -notlike "*__*" } | ForEach-Object {
+        $fields[$_.Name] = $_.Id
+    }
+    
+    $props = @{
+        Parameters = @(
+            @{Name="SourceContent"; Title="Source Content"; Options=$fields; Tooltip="Select your source content field to evaluate.";}
+            @{Name="KeywordsField"; Title="Keywords"; Options=$fields; Tooltip="Select the field for your keywords." }
+            @{Name="DescriptionField"; Title="Description"; Options=$fields; Tooltip="Select the field for your description." }
+            @{Name="TitleField"; Title="Page Title"; Options=$fields; Tooltip="Select the field for your page title." }
+        )
+        Title = "AI Metadata Generation"
+        Description = "Select the fields you'd like to use for generation."
+        Width = 400
+        Height = 300
+        ShowHints = $true
+    }
+    
+    $result = Read-Variable @props
+    
+    if($result -ne "ok") {
+        Close-Window
+        Exit
+    }
+    
+    $prompt = "Extract 10 unique multi-word key phrases from this text and give me a comma delimited list.  Maximum of 2 words per phrase."
+    MakeAIRequest $item.Fields[$SourceContent].Value $prompt "Keywords:" $KeywordsField
+    
+    $prompt = "Provide two small sentences for a meta description to use on a website based on the following content."
+    MakeAIRequest $item.Fields[$SourceContent].Value $prompt "Description:" $DescriptionField
+    
+    $prompt = "Provide a page title that can be used for a browser on a website based on the following content."
+    MakeAIRequest $item.Fields[$SourceContent].Value $prompt "Page Title:" $TitleField
+    
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230304T194417Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\karega.anglin@perficient.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\karega.anglin@perficient.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6d359b9a-9536-4e30-9121-d98a6ad395b0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\karega.anglin@perficient.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230304T195920Z
