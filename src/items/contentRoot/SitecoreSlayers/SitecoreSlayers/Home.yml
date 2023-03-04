@@ -72,13 +72,13 @@ Languages:
       Value: 20230304T152500Z
     - ID: "3f0a74f5-c915-4c2b-8796-37ca2a19e246"
       Hint: Keywords
-      Value: global digital consultancy, skilled strategists, technologists, U.S., Latin America, India, world's biggest brands, customers, business, experience, expertise, speed, agility, pragmatism, unprecedented results, systems, software development,
+      Value: 
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Home
     - ID: "4ea0c6ab-7f45-444e-951e-8dcc7593f239"
       Hint: Description
-      Value: We're a global digital consultancy with skilled strategists and technologists in the U.S., Latin America, and India. We're making a difference by transforming how the world&rsquo;s biggest brands connect with customers and grow their
+      Value: 
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -89,10 +89,10 @@ Languages:
         sitecore\z0PvL0RFjD
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6d0357d6-d3e3-4b90-ad0d-2bd6e67aacfd"
+      Value: "f0114ac2-e6ca-4f2b-ba26-fffeac967388"
     - ID: "914c7230-582e-409f-9a7f-12d155c6dbce"
       Hint: Title
-      Value: "Perficient: A Global Digital Consultancy"
+      Value: 
     - ID: "b3dbef95-c305-4f64-974b-1474d4dff5fb"
       Hint: Content
       Value: |
@@ -105,4 +105,4 @@ Languages:
         sitecore\karega.anglin@perficient.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230304T195047Z
+      Value: 20230304T204048Z
