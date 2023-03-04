@@ -1,0 +1,37 @@
+﻿---
+ID: "e6e487a3-c702-496b-bbd6-40b6552dbb11"
+Parent: "1d79d3db-27b0-4345-8b1f-1cd6f0d18fc6"
+Template: "1d79d3db-27b0-4345-8b1f-1cd6f0d18fc6"
+Path: /sitecore/templates/Project/SitecoreSlayers/Page Design Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {1D79D3DB-27B0-4345-8B1F-1CD6F0D18FC6}
+    {1105B8F8-1E00-426B-BF1F-C840742D827B}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230304T152453Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\z0PvL0RFjD
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\z0PvL0RFjD
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d3335bd1-1dcf-46af-b127-9db47d1c3a9a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\z0PvL0RFjD
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230304T152456Z

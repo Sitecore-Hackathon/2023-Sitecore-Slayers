@@ -1,53 +1,33 @@
 ﻿---
-ID: "dffee92b-0441-45a4-9207-67810b72bd46"
-Parent: "895e25c4-12b2-4b2c-8233-82f3b79eef53"
-Template: "bc71d442-3e4f-46ba-887c-746e54f9bb83"
-Path: /sitecore/system/Settings/Services/Rendering Hosts/Default
+ID: "e2c0c902-5c13-4cb4-824e-61160a634021"
+Parent: "6c1c31c3-daa2-4715-9e88-ee812a5cd42d"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/SitecoreSlayers/SitecoreSlayers/Presentation/Styles/BasicSite/Footer - Indent inner"
 SharedFields:
-- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
-  Hint: __Read Only
+- ID: "09147fb2-ebfb-4949-8c8e-26a424409d5e"
+  Hint: Value
+  Value: "indent-inner"
+- ID: "69bb49f3-da64-4b0e-abd6-184b832ff6ab"
+  Hint: Allowed Renderings
+  Value: "{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+- ID: "95579875-484e-41f0-b9c2-804eafaf3ccc"
+  Hint: IsVerifiedStyle
   Value: 1
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 225
 Languages:
-- Language: da
-  Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Standard
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20230304T153033Z
-    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
-      Hint: __Owner
-      Value: |
-        sitecore\Admin
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\Admin
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "590060a6-eaa5-4843-9750-c8c22c85b825"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\Admin
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20230304T153033Z
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Default
+    Value: Einrückung innen
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20230304T153033Z
+      Value: 20230303T155000Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -58,48 +38,46 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "590060a6-eaa5-4843-9750-c8c22c85b825"
+      Value: "ec8fb186-77aa-4630-b717-dbfcceda1ef6"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230304T153033Z
+      Value: 20230303T155000Z
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20230304T153033Z
-    - ID: "3121c257-53cf-464a-b736-98b418876057"
-      Hint: AppName
-      Value: Default
+      Value: 20220613T135444Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "986522ec-d58b-403f-b3c6-aa2a94164d53"
-    - ID: "e32c1801-79b3-4fc1-a9c4-3c6e6c2968ae"
-      Hint: ServerSideRenderingEngineApplicationUrl
-      Value: "https://xmc-3lvbmuxxghnx2vrrcpxhwu.sitecorecloud.io/"
-    - ID: "fc76919b-0d7c-4732-865d-2af795fb38a4"
-      Hint: ServerSideRenderingEngineEndpointUrl
-      Value: "https://xmc-3lvbmuxxghnx2vrrcpxhwu.sitecorecloud.io:443/api/editing/render"
+      Value: "d9004516-b326-40a7-88b6-4a7465ff33a3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\z0PvL0RFjD
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230304T152531Z
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: デフォルト
+    Value: 内側のインデント
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20230304T153033Z
+      Value: 20230303T155000Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -110,25 +88,25 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "590060a6-eaa5-4843-9750-c8c22c85b825"
+      Value: "ec8fb186-77aa-4630-b717-dbfcceda1ef6"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230304T153033Z
+      Value: 20230303T155000Z
 - Language: "zh-CN"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 默认
+    Value: 内缩进
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20230304T153033Z
+      Value: 20230303T155000Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -139,11 +117,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "590060a6-eaa5-4843-9750-c8c22c85b825"
+      Value: "ec8fb186-77aa-4630-b717-dbfcceda1ef6"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230304T153033Z
+      Value: 20230303T155000Z

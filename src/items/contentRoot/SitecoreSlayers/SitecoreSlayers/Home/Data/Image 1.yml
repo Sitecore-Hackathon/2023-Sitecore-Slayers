@@ -1,0 +1,40 @@
+﻿---
+ID: "17cff3f5-63e3-498f-9ad2-b6c8b444c4a5"
+Parent: "27602893-e31d-4151-85ca-ef1a2bbcb505"
+Template: "d885df8c-b2d6-4007-b34b-2bbafb527304"
+Path: /sitecore/content/SitecoreSlayers/SitecoreSlayers/Home/Data/Image 1
+BranchID: "bf982a12-b7d1-46d0-b750-cb3bc8f89988"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{9177AEA8-D76C-4AEC-AEB7-C06C84A40D4F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230304T152530Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\z0PvL0RFjD
+    - ID: "57caf172-ce57-4e48-b3a1-46f8aea71c08"
+      Hint: Image
+      Value: |
+        <image mediaid="{0D9C2383-BC1F-48EF-81E4-DD8307BC6E55}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\z0PvL0RFjD
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4f2959eb-0a06-410c-8bf8-5fe9ad8ddfb9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\z0PvL0RFjD
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230304T152530Z

@@ -1,0 +1,47 @@
+﻿---
+ID: "890cc81a-d16c-4a8d-8f1e-ad085c0401ac"
+Parent: "94f09891-39ed-4fb9-81e0-32308bc708fa"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/SitecoreSlayers/JSS Settings
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/gearwheels.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {EC848505-D30C-4BDC-A0AA-7CC9D320085E}
+    {CBC14160-BED0-4AA2-9387-4C13179205B9}
+    {A7228B46-610D-4A17-9F61-649F3A30AAAE}
+    {59F55DFC-4DB7-422F-9D40-F2ECF66C8499}
+    {6175F4C7-F87F-4F7F-928E-4C5CA5DFFAF4}
+    {30869218-C3AD-40F9-BCFF-6837127ECD8F}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{D7C25B26-4C1D-41E2-AC13-DB061BB0A44E}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230304T152455Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\z0PvL0RFjD
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\z0PvL0RFjD
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2951b61f-2ad0-42ba-a177-e1dbe68e136f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\z0PvL0RFjD
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230304T152458Z
