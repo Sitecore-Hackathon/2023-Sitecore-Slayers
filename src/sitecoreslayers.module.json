@@ -1,0 +1,23 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "sitecoreslayers",
+    "items": {
+        "includes": [
+            {
+                "name": "templates",
+                "path": "/sitecore/Templates/Project/SitecoreSlayers",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "contentRoot",
+                "path": "/sitecore/content/SitecoreSlayers",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "media",
+                "path": "/sitecore/Media Library/Project/SitecoreSlayers",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            }
+        ]
+    }
+}
